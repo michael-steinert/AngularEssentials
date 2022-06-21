@@ -1,0 +1,19 @@
+<div class="profile-row margin-bottom-16">
+  <img src="{{ tokenImagePath }}" />
+  <div style="width: 60px">
+    <span>
+      <b>{{ tokenName }}</b>
+    </span>
+    <br />
+    <span class="description"> {{ tokenDescription }} </span>
+  </div>
+  <a
+    *ngIf="canFavorite"
+    (click)="
+      tokenService.addToken(tokenName, tokenDescription, tokenImagePath);
+      canFavorite = false
+    "
+  >
+    Favorite Token
+  </a>
+</div>

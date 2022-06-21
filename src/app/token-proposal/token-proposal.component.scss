@@ -1,0 +1,17 @@
+.profile-row {
+  display: flex;
+  align-items: center;
+  img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    /* `object-fit` does not distort the Image  */
+    object-fit: cover;
+    object-position: center;
+    margin: 0 16 px;
+  }
+  .description {
+    color: rgba(0,0,0,0.5);
+    font-size: 12px;
+  }
+}

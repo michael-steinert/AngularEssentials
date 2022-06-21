@@ -1,0 +1,10 @@
+<app-token-profile [canFavorite]="false"></app-token-profile>
+<div class="margin-bottom-16">
+  <b>Tokens</b>
+</div>
+<app-token-profile
+  *ngFor="let i of [0, 1, 2]"
+  [tokenName]="tokenNames[i]"
+  [tokenDescription]="tokenDescriptions[i]"
+  [tokenImagePath]="tokenImagePaths[i]"
+></app-token-profile>

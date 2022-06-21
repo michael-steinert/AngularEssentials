@@ -1,0 +1,15 @@
+<div class="standard-card padding-16 display-flex">
+  <b>Favorites</b>
+  <div *ngIf="tokenService.tokenNames.length === 0">
+      No Favorites
+  </div>
+  <div
+    class="token-box flex-grow"
+    *ngFor="let name of tokenService.tokenNames; let i = index"
+  >
+    <img src="{{ tokenService.tokenImagePaths[i] }}" />
+    <div class="token-name">
+      <b>{{ name }}</b>
+    </div>
+  </div>
+</div>

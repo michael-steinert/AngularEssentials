@@ -1,0 +1,14 @@
+.token-box {
+  /* `flex-direction` algins all Elements in a Column */
+  flex-direction: column;
+  text-align: center;
+  img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .token-name {
+    font-size: 12px;
+  }
+}
